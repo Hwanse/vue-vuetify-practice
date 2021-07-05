@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-tabs v-model="tab" grow background-color="primary" dark>
+        <v-tabs v-model="tab" grow background-color="primary" dark> 
             <v-tab v-for="menu in menus"
                     :key="menu.id">
                 {{ menu.name }}
