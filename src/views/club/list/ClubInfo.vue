@@ -12,6 +12,9 @@
                 <v-list-item-subtitle>
                     {{info.zone}}
                 </v-list-item-subtitle>
+                <v-list-item-subtitle>
+                    {{info.interest}}
+                </v-list-item-subtitle>
             </v-list-item-content>
             </v-list-item>
         </v-item-group>

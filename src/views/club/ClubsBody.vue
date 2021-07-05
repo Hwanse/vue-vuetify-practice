@@ -26,8 +26,8 @@ export default {
         return {
             tab: null,
             menus: [
-                {id: 1, name: '스터디 검색'},
-                {id: 2, name: '참가중인 스터디'}
+                {id: 1, name: '리스트1'},
+                {id: 2, name: '리스트2'}
             ]
         }
     },
