@@ -8,11 +8,9 @@
         </v-tabs>
 
         <v-tabs-items v-model="tab">
-        
             <v-tab-item v-for="menu in menus" :key="menu.id">
                 
             </v-tab-item>
-        
         </v-tabs-items>
     </div>
 </template>
