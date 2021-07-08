@@ -8,8 +8,17 @@
         </v-tabs>
 
         <v-tabs-items v-model="tab">
-            <v-tab-item v-for="menu in menus" :key="menu.id">
-                
+            <v-tab-item>
+               <h1>메뉴 1</h1> 
+            </v-tab-item>
+            <v-tab-item>
+                <h1>메뉴 2</h1>
+            </v-tab-item>
+            <v-tab-item>
+                <h1>메뉴 3</h1>
+            </v-tab-item>
+            <v-tab-item>
+                <h1>메뉴 4</h1>
             </v-tab-item>
         </v-tabs-items>
     </div>
