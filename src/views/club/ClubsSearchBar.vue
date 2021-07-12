@@ -1,6 +1,6 @@
 <template>
 
-    <v-app-bar color="primary" flat app>
+    <v-app-bar color="primary" flat>
 
         <v-col cols="9">
             <v-text-field
