@@ -1,11 +1,17 @@
 <template>
     <div>
         <v-card>
-            <v-list min-height="650">
+            <v-virtual-scroll 
+                :items="clubList" 
+                item-height="90" 
+                height="650"
+            >
                 
-                <club-info v-for="club in clubList" v-bind:key="(club.id)" v-bind:club="club"></club-info>
-                
-            </v-list>
+                <template v-slot="{ item }">
+                    <club-info v-bind:key="item.id" v-bind:club="item"></club-info>            
+                </template>
+
+            </v-virtual-scroll>
         </v-card>
     </div>
 </template>
