@@ -9,7 +9,7 @@
 
         <v-tabs-items v-model="tab">
             <v-tab-item>
-               <h1>메뉴 1</h1> 
+               <club-detail-info></club-detail-info>
             </v-tab-item>
             <v-tab-item>
                 <h1>메뉴 2</h1>
@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import ClubDetailInfo from './info/ClubDetailInfo.vue'
+
 export default {
     data() {
         return {
@@ -37,5 +39,8 @@ export default {
             ]
         }
     },
+    components: {
+        'club-detail-info': ClubDetailInfo
+    }
 }
 </script>
