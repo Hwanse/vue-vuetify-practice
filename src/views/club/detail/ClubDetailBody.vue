@@ -15,7 +15,7 @@
                 <meeting-list></meeting-list>
             </v-tab-item>
             <v-tab-item>
-                <h1>메뉴 3</h1>
+                <board-list></board-list>
             </v-tab-item>
         </v-tabs-items>
     </div>
@@ -24,6 +24,7 @@
 <script>
 import ClubDetailInfo from './info/ClubDetailInfo.vue'
 import MeetingList from './meeting/MeetingList.vue'
+import BoardList from './board/BoardList.vue'
 
 export default {
     data() {
@@ -38,7 +39,8 @@ export default {
     },
     components: {
         'club-detail-info': ClubDetailInfo,
-        'meeting-list': MeetingList
+        'meeting-list': MeetingList,
+        'board-list': BoardList
     }
 }
 </script>
