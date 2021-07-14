@@ -9,16 +9,13 @@
 
         <v-tabs-items v-model="tab">
             <v-tab-item>
-               <club-detail-info></club-detail-info>
+                <club-detail-info></club-detail-info>
             </v-tab-item>
             <v-tab-item>
-                <h1>메뉴 2</h1>
+                <meeting-list></meeting-list>
             </v-tab-item>
             <v-tab-item>
                 <h1>메뉴 3</h1>
-            </v-tab-item>
-            <v-tab-item>
-                <h1>메뉴 4</h1>
             </v-tab-item>
         </v-tabs-items>
     </div>
@@ -26,6 +23,7 @@
 
 <script>
 import ClubDetailInfo from './info/ClubDetailInfo.vue'
+import MeetingList from './meeting/MeetingList.vue'
 
 export default {
     data() {
@@ -34,13 +32,13 @@ export default {
             menus: [
                 {id: 1, name: '메뉴1'},
                 {id: 2, name: '메뉴2'},
-                {id: 3, name: '메뉴2'},
-                {id: 4, name: '메뉴2'},
+                {id: 3, name: '메뉴3'},
             ]
         }
     },
     components: {
-        'club-detail-info': ClubDetailInfo
+        'club-detail-info': ClubDetailInfo,
+        'meeting-list': MeetingList
     }
 }
 </script>
